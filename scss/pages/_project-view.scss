@@ -1,0 +1,229 @@
+.project {
+  background-color: $bg-main;
+
+  &__header {
+    padding: 3.4rem 0;
+    color: $text-light;
+  }
+
+  &__title {
+    margin-bottom: 3.4rem;
+    text-transform: capitalize;
+  }
+
+  &__title h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    background: $gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__title span {
+    font-size: 1.4rem;
+    color: $text-light-gray;
+  }
+
+  &__image {
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem 5rem;
+    margin-bottom: -10%;
+  }
+
+  &__view-swiper {
+    display: none;
+  }
+
+  &__image img {
+    width: 100%;
+    border-radius: $border-radius-8;
+    box-shadow: 0px 2px 13px 1px #1d1d27;
+  }
+
+  &__overview {
+    margin-top: 10%;
+    background-color: $text-light;
+    padding: 3.4rem 0;
+  }
+
+  &__overview p {
+    padding: 0 4rem;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: $text-grayish-dark;
+    line-height: 1.6;
+  }
+
+  &__features {
+    padding: 3.4rem 0;
+  }
+
+  &__features .features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.6rem;
+    padding: 0 4rem;
+  }
+
+  &__features .features {
+    display: flex;
+    align-items: center;
+  }
+
+  &__features .features:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__features .features:nth-child(even) > div {
+    margin-left: 1.2rem;
+  }
+
+  &__features .features > div {
+    background-color: $card-bg;
+    border-radius: $border-radius-5;
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.2rem;
+  }
+
+  &__features img {
+    width: 60%;
+  }
+
+  &__features h3 {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    color: $text-grayish-dark;
+  }
+
+  &__team {
+    padding: 3.4rem 0;
+    color: $text-light;
+  }
+
+  &__team .team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.6rem;
+    padding: 0 4rem;
+  }
+
+  &__team .team-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 1px solid rgba(29, 29, 39, 0.199);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 1px #1d1d2727;
+  }
+
+  &__team .team-container img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+  }
+
+  &__team .team-container h3,
+  &__team .team-container span {
+    text-transform: capitalize;
+    color: $text-grayish-dark;
+  }
+
+  &__team .team-container h3 {
+    font-size: 1.4rem;
+  }
+
+  &__team .team-container span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+
+  // MEDIA QUERIES
+  @media (min-width: 870px) {
+    &__features .features-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+
+    &__features .features:nth-child(even) {
+      flex-direction: row;
+    }
+
+    &__features .features:nth-child(even) > div {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 830px) {
+    &__title {
+      text-align: center;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__view-swiper {
+      display: block;
+    }
+
+    &__image img {
+      width: 80%;
+    }
+
+    &__overview {
+      margin-top: unset;
+    }
+
+    &__team .team-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 570px) {
+    &__image,
+    &__overview p,
+    &__features .features-container,
+    &__team .team-container {
+      padding: 0;
+    }
+
+    &__features .features-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    &__features .features,
+    &__features .features:nth-child(even) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__features .features > div,
+    &__features .features:nth-child(even) > div {
+      margin: unset;
+      margin-bottom: 1rem;
+      width: 8rem;
+      height: 8rem;
+    }
+
+    &__team .team-container {
+      row-gap: 4rem;
+    }
+  }
+}

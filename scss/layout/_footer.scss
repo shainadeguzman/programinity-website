@@ -1,0 +1,128 @@
+.footer {
+  background-color: $bg-footer;
+  padding-top: 10rem;
+  position: relative;
+  z-index: 1;
+
+  &.home-footer {
+    padding-top: 24rem;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+  }
+
+  &__logo > img {
+    width: 4.2rem;
+    margin-right: 0.8rem;
+  }
+
+  &__logo > span {
+    text-transform: capitalize;
+    color: $text-light;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &__desc {
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    color: $text-light-gray;
+    font-size: 1.4rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+  }
+
+  &__icons > a {
+    border: 1px solid $text-light;
+    text-decoration: none;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0.2rem;
+    transition: background $main-transition, border $main-transition;
+  }
+
+  &__icons > a.facebook:hover {
+    background: #4278e5;
+    border-color: transparent;
+  }
+
+  &__icons > a.instagram:hover {
+    background: linear-gradient(
+      to bottom left,
+      #fbe18a,
+      #fcbb45,
+      #f75274,
+      #d53692,
+      #8f39ce,
+      #5b4fe9
+    );
+    border-color: transparent;
+  }
+
+  &__icons > a.twitter:hover {
+    background: linear-gradient(to bottom left, #33ccff, #337fff);
+    border-color: transparent;
+  }
+
+  &__icons > a.tiktok:hover {
+    background: linear-gradient(to bottom left, #22004a, #000000);
+    border-color: transparent;
+  }
+
+  &__icons > a.linkedin:hover {
+    background: linear-gradient(to bottom left, #007ab5, #0046e5);
+    border-color: transparent;
+  }
+
+  &__icons img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__copyright {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.164);
+  }
+
+  &__copyright p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: $text-light-gray;
+    line-height: 1.6;
+  }
+
+  // MEDI QUERIES
+  @media (max-width: 480px) {
+    &__desc {
+      width: 100%;
+    }
+
+    &__copyright {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}

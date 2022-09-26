@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+}
+
+body.hide-bar {
+  overflow-y: hidden;
+}

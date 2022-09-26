@@ -1,0 +1,85 @@
+.start-project {
+  background-color: $bg-main;
+  position: relative;
+  z-index: 3;
+
+  &__card {
+    background-color: $card-bg;
+    border-radius: $border-radius-8;
+    padding: 4rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 3rem;
+    margin-bottom: -21rem;
+
+    img {
+      width: 30%;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: $text-light;
+      text-transform: capitalize;
+    }
+
+    a {
+      background-image: $gradient;
+      background-size: 200%;
+      transition: background 0.8s ease, box-shadow 0.6s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-position: right;
+      box-shadow: 0px 0px 8px 2px #6a71f5;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    &__card {
+      width: 80%;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    &__card {
+      width: 65%;
+    }
+  }
+
+  @media (max-width: 790px) {
+    &__card {
+      flex-direction: column;
+      width: 60%;
+      margin-bottom: -27rem;
+
+      img {
+        width: 65%;
+      }
+
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__card {
+      flex-direction: column;
+      width: 80%;
+      padding: 3rem 2rem;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+}

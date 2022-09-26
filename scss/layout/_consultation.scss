@@ -1,0 +1,120 @@
+.consultation {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  top: 35%;
+  z-index: 800;
+  opacity: 1;
+  pointer-events: all;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &.hidden {
+    opacity: 0;
+    transform: translateX(-50%) scale(0);
+    pointer-events: none;
+  }
+
+  button {
+    position: absolute;
+    top: 1.4rem;
+    right: 1.4rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: transparent;
+    color: $text-light;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  form.consultation {
+    width: 30rem;
+    max-width: 30rem;
+    min-width: 10rem;
+    background-color: $card-bg;
+    padding: 3.4rem 3rem;
+    border-radius: $border-radius-8;
+  }
+
+  label {
+    font-size: 1.6rem;
+    color: $text-light;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+
+  .input-group {
+    display: flex;
+    height: 3.4rem;
+    background-color: $text-light;
+    border-radius: $border-radius-8;
+  }
+
+  .text-input,
+  .submit {
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  .text-input {
+    width: 85%;
+    position: relative;
+    font-family: Nunito;
+    font-weight: 700;
+    color: $bg-main;
+  }
+
+  .text-input::placeholder {
+    opacity: 0.6;
+    font-weight: 400;
+  }
+
+  .btn,
+  .btn-group {
+    border-bottom-right-radius: $border-radius-8;
+    border-top-right-radius: $border-radius-8;
+  }
+
+  .btn,
+  .btn-group,
+  .submit {
+    width: 15%;
+    background: $gradient;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .btn > img {
+    position: absolute;
+    width: 1.8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  span.span-1 {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    color: red;
+    pointer-events: none;
+  }
+
+  // MEDIA QUERIES
+  @media (max-width: 450px) {
+    form.consultation {
+      width: 22rem;
+    }
+
+    .btn > img {
+      width: 1.4rem;
+    }
+  }
+}

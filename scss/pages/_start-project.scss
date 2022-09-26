@@ -1,0 +1,394 @@
+.wizard {
+  background-color: $bg-main;
+  padding: 4rem 0;
+
+  &__email {
+    padding-bottom: 3rem;
+
+    h1 {
+      font-size: 2rem;
+      text-transform: capitalize;
+      background: $gradient;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    a {
+      text-decoration: none;
+      color: $text-light;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__container {
+    background-color: $card-bg;
+    padding: 3rem;
+    border-radius: $border-radius-8;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    color: $text-light;
+    width: 60%;
+  }
+
+  &__title h1 {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin-bottom: 0.2rem;
+    background: $gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__title p {
+    color: $text-light-gray;
+    font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    color: $text-light;
+    column-gap: 3rem;
+  }
+
+  &__content .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content .left .bullet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .line {
+    width: 1.5px;
+    height: 3rem;
+    background-color: $text-light;
+    margin-left: auto;
+    margin-right: 13.5%;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    border-radius: $border-radius-8;
+  }
+
+  &__content .left .bullet:last-child {
+    bottom: 0;
+  }
+
+  &__content .left .bullet > div {
+    position: relative;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 1.5px solid $text-light;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content .left .bullet > span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 1.2rem;
+    text-transform: capitalize;
+  }
+
+  &__content .left .bullet img {
+    width: 60%;
+    position: absolute;
+    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  &__content .left .bullet img:first-child {
+    transform: scale(0);
+  }
+
+  &__content .left .bullet.active > div {
+    background: $gradient;
+  }
+
+  &__content .left .bullet.active img:last-child {
+    transform: scale(0);
+  }
+
+  &__content .left .bullet.active img:first-child {
+    transform: scale(1);
+  }
+
+  &__content .left .bullet.active + div {
+    background: $light-green;
+  }
+
+  &__content .right {
+    overflow-x: hidden;
+  }
+
+  &__content .right form {
+    display: flex;
+    width: 400%;
+  }
+
+  &__content .right form > .page {
+    width: 25%;
+    transition: margin-left 0.8s ease;
+  }
+
+  &__content .right form .page-input {
+    margin-bottom: 2rem;
+  }
+
+  &__content .right form .page-input.last {
+    margin-bottom: 3rem;
+  }
+
+  &__content .right form .page label {
+    display: block;
+    text-transform: capitalize;
+    font-family: 500;
+    color: $text-light;
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+  }
+
+  &__content .right form .page input,
+  button,
+  textarea {
+    border: none;
+    outline: none;
+    font-family: Nunito;
+  }
+
+  &__content .right form .page input.text::placeholder,
+  &__content .right form .page input.email::placeholder,
+  &__content .right form .page textarea::placeholder,
+  &__content .right form .page input.project-name::placeholder,
+  &__content .right form .page input.project-survey::placeholder {
+    opacity: 0.6;
+    font-weight: 400;
+  }
+
+  &__content .right form .page textarea {
+    width: 90%;
+    height: 5rem;
+    padding: 0.4rem 0.8rem;
+    font-weight: 700;
+    color: $bg-main;
+    border-radius: $border-radius-5;
+  }
+
+  &__content .right form .page input.text,
+  &__content .right form .page input.project-name,
+  &__content .right form .page input.email,
+  &__content .right form .page input.project-survey {
+    width: 90%;
+    height: 3rem;
+    border-radius: $border-radius-5;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-weight: 700;
+    color: $bg-main;
+  }
+
+  &__content .right form .project-types {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  &__content .right form .project-types .radio {
+    border: 1px solid $text-light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border-radius: $border-radius-5;
+    position: relative;
+    padding: 0.2rem 0;
+  }
+
+  &__content .right form .project-types .radio span {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 1.2rem;
+    z-index: 8;
+    padding: 4rem;
+    width: 100%;
+  }
+
+  &__content .right form .project-types .radio input {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 9;
+  }
+
+  &__content .right form .project-types .radio input:checked + div {
+    width: 100%;
+    height: 100%;
+    background: $gradient;
+    border-radius: $border-radius-5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+  }
+
+  &__content .right form .terms {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content .right form .terms p {
+    text-transform: capitalize;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  &__content .right form .terms > input {
+    border: none;
+    outline: none;
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  &__content .right form button.next-btn-1,
+  &__content .right form button.next-btn-2,
+  &__content .right form button.next-btn-3,
+  &__content .right form input.next-btn-4 {
+    background: $gradient;
+    padding: 0.3rem 1.6rem;
+    border-radius: $border-radius-5;
+    color: $text-light;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+
+  &__content .right form button.prev-btn-1,
+  &__content .right form button.prev-btn-2,
+  &__content .right form button.prev-btn-3 {
+    background-color: transparent;
+    color: $text-light;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-right: 6rem;
+  }
+
+  &__content .right form .field-error {
+    color: rgb(255, 57, 57);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0.6rem;
+    display: none;
+  }
+
+  &__content .right form .fullname-error.show,
+  &__content .right form .email-error.show,
+  &__content .right form .project-name-error.show,
+  &__content .right form .project-desc-error.show,
+  &__content .right form .project-type-error.show,
+  &__content .right form .project-survey-error.show,
+  &__content .right form .project-terms-error.show {
+    display: block;
+  }
+
+  &__content .right form .project-type-error.show {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  // MEDIA
+  @media (min-width: 970px) {
+    &__container {
+      width: 80rem;
+      margin: 0 auto;
+    }
+
+    &__email {
+      width: 85rem;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 730px) {
+    &__title {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 570px) {
+    &__title {
+      text-align: center;
+      width: 100%;
+    }
+
+    &__container {
+      padding: 2rem;
+    }
+
+    &__content {
+      grid-template-columns: 1fr;
+    }
+
+    .left {
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+    }
+
+    .left > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__content .left .bullet {
+      flex-direction: column;
+    }
+
+    &__content .left .bullet > span {
+      margin-right: 0;
+      margin-bottom: 0.6rem;
+      width: 5rem;
+    }
+
+    .line {
+      width: 100%;
+      height: 2px;
+      margin-left: unset;
+      margin-right: unset;
+      margin-top: unset;
+      margin-bottom: -6%;
+    }
+
+    &__content .left .bullet > div {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+  }
+}

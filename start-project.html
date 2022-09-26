@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programinity | Start a Project</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="body">
+    <!-- OVERLAY -->
+    <div class="overlay hidden"></div>
+
+    <!-- CONSULTATION FORM -->
+    <div class="consultation hidden">
+      <form action="#" class="consultation">
+        <button class="consultation-icon">
+          <img src="img/close-icon.svg" alt="close icon" />
+        </button>
+        <label for="website-name">project name :</label>
+        <div class="input-group">
+          <input
+            type="text"
+            name="website-name"
+            class="text-input"
+            placeholder="Enter project name :"
+          />
+          <div class="btn">
+            <input type="submit" value="" class="submit" />
+            <img src="img/send-icon.svg" alt="send icon" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile">
+      <div class="main-container">
+        <ul class="mobile__menu-list">
+          <li><a href="index.html">home</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+        <button class="mobile__menu-cta primary-btn">
+          <span>free consultation</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="main-container">
+        <a href="index.html" class="nav__logo">
+          <img src="img/logo.png" alt="programinity logo" />
+          <span>Programinity</span>
+        </a>
+
+        <ul class="nav__list">
+          <li><a href="index.html" class="active">home</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+
+        <button class="nav__cta primary-btn">
+          <span>free consultation</span>
+        </button>
+
+        <div class="nav__button">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MESSAGE BOX  -->
+    <div class="message">
+      <div class="message__content">
+        <img class="close-icon" src="img/close-icon.svg" alt="" />
+        <div class="message__container">
+          <div class="icon">
+            <img src="img/check-icon.svg" alt="" />
+          </div>
+          <div class="message__text">
+            <h3>succesfuly submitted</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem,
+              ipsum dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START A PROJET - MULTI STEP FORM -->
+    <section class="wizard">
+      <div class="main-container">
+        <!-- EMAIL -->
+        <div class="wizard__email">
+          <h1>email us:</h1>
+          <a href="#">programinity@gmail.com</a>
+        </div>
+
+        <div class="wizard__container">
+          <div class="wizard__title">
+            <h1>start a project</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="wizard__content">
+            <div class="left">
+              <div>
+                <div class="bullet">
+                  <span>your info</span>
+                  <div>
+                    <img src="img/check-icon.svg" alt="" />
+                    <img src="img/info-icon.svg" alt="" />
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="bullet">
+                  <span>describe</span>
+                  <div>
+                    <img src="img/check-icon.svg" alt="" />
+                    <img src="img/describe-icon.svg" alt="" />
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="bullet">
+                  <span>services</span>
+                  <div>
+                    <img src="img/check-icon.svg" alt="" />
+                    <img src="img/project-type-icon.svg" alt="" />
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="bullet">
+                  <span>complete</span>
+                  <div>
+                    <img src="img/check-icon.svg" alt="" />
+                    <img src="img/finishing-up.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <form action="#" id="project-form">
+                <div class="page slide-page page-1">
+                  <div class="page-title">
+                    <h2>your information</h2>
+                    <p>enter your fullname and email address</p>
+                  </div>
+                  <div class="page-input">
+                    <label for="fullname">full name</label>
+                    <input
+                      type="text"
+                      class="text fullname"
+                      placeholder="Enter your full name here..."
+                    />
+                    <span class="field-error fullname-error"
+                      >Required Field!</span
+                    >
+                  </div>
+                  <div class="page-input last">
+                    <label for="email">email</label>
+                    <input
+                      class="email"
+                      placeholder="Enter your email address here..."
+                    />
+                    <span class="field-error email-error">Required Field!</span>
+                  </div>
+                  <div class="btns">
+                    <button class="next-btn-1">next</button>
+                  </div>
+                </div>
+                <div class="page">
+                  <div class="page-title">
+                    <h2>describe your project</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                  </div>
+                  <div class="page-input">
+                    <label for="project-name">project name</label>
+                    <input
+                      name="project-name"
+                      class="project-name"
+                      placeholder="Enter your email address here..."
+                    />
+                    <span class="field-error project-name-error"
+                      >Required Field!</span
+                    >
+                  </div>
+                  <div class="page-input last">
+                    <label for="project-name">project description</label>
+                    <textarea
+                      name="texarea"
+                      class="project-desc"
+                      placeholder="Describe you project here..."
+                    ></textarea>
+                    <span class="field-error project-desc-error"
+                      >Required Field!</span
+                    >
+                  </div>
+                  <div class="btns">
+                    <button class="prev-btn-1">back</button>
+                    <button class="next-btn-2">next</button>
+                  </div>
+                </div>
+                <div class="page">
+                  <div class="page-title">
+                    <h2>type of project</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                  </div>
+                  <div class="project-types page-input last">
+                    <label for="project-type" class="radio">
+                      <span>web design</span>
+                      <input
+                        type="radio"
+                        name="project-type"
+                        class="web-design"
+                      />
+                      <div></div>
+                    </label>
+                    <label for="project-type" class="radio">
+                      <span>app development</span>
+                      <input type="radio" name="project-type" class="app-dev" />
+                      <div></div>
+                    </label>
+                    <label for="project-type" class="radio">
+                      <span>web development</span>
+                      <input type="radio" name="project-type" class="web-dev" />
+                      <div></div>
+                    </label>
+                    <label for="project-type" class="radio">
+                      <span>Database</span>
+                      <input
+                        type="radio"
+                        name="project-type"
+                        class="database"
+                      />
+                      <div></div>
+                    </label>
+                  </div>
+                  <span class="field-error project-type-error"
+                    >Select atleast one!</span
+                  >
+                  <div class="btns">
+                    <button class="prev-btn-2">back</button>
+                    <button class="next-btn-3">next</button>
+                  </div>
+                </div>
+                <div class="page">
+                  <div class="page-title">
+                    <h2>Finishing up</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                  </div>
+                  <div class="page-input">
+                    <label for="project-survey"
+                      >how did you hear about us?</label
+                    >
+                    <input
+                      name="project-name"
+                      class="project-survey"
+                      placeholder="How did you hear about us?..."
+                    />
+                    <span class="field-error project-survey-error"
+                      >Required Field!</span
+                    >
+                  </div>
+                  <div class="page-input last">
+                    <div class="terms">
+                      <input type="checkbox" class="project-terms" />
+                      <p>i accept the terms and conditions</p>
+                    </div>
+                    <span class="field-error project-terms-error"
+                      >Please accept the terms and agreement</span
+                    >
+                  </div>
+                  <div class="btns">
+                    <button class="prev-btn-3">back</button>
+                    <input type="submit" name="submit" class="next-btn-4" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="main-container">
+        <div class="footer__logo">
+          <img src="img/logo.png" alt="programinity logo" />
+          <span>programinity</span>
+        </div>
+        <p class="footer__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          reprehenderit exercitationem molestias quo ullam.
+        </p>
+        <div class="footer__icons">
+          <a href="#" class="facebook">
+            <img src="img/facebook-icon.svg" alt="facebook icon" />
+          </a>
+          <a href="#" class="instagram">
+            <img src="img/instagram-icon.svg" alt="instagram icon" />
+          </a>
+          <a href="#" class="twitter">
+            <img src="img/twitter-icon.svg" alt="twitter icon" />
+          </a>
+          <a href="#" class="tiktok">
+            <img src="img/tiktok-icon.svg" alt="tiktok icon" />
+          </a>
+          <a href="#" class="linkedin">
+            <img src="img/linkedin-icon.svg" alt="linkedin icon" />
+          </a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          Copyright&copy;2022 Programinity. All right reserved | Privacy Policy
+        </p>
+      </div>
+    </div>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button class="scroll-btn">
+      <img src="img/arrow-left.svg" alt="" />
+    </button>
+
+    <script src="/js/overlay.js"></script>
+    <script src="/js/consultation.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/wizard.js"></script>
+  </body>
+</html>

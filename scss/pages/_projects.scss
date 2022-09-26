@@ -1,0 +1,227 @@
+.all-projects {
+  min-height: 24rem;
+  background-color: $bg-main;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    color: $text-light;
+  }
+
+  &__left,
+  &__right {
+    flex: 0 1 48%;
+  }
+
+  &__right h1 {
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    margin-bottom: 0.6rem;
+  }
+
+  &__right p {
+    font-size: 1.6rem;
+  }
+
+  &__right p span {
+    font-weight: 700;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__left img {
+    width: 70%;
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+  }
+
+  &__body > div {
+    flex: none;
+    width: 42%;
+    padding: 3rem;
+  }
+
+  &__body > div > figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+      transition: 0.4s ease-in-out;
+      display: block;
+    }
+
+    figcaption {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: $text-light;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.2s ease 0.2s;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.4rem 1rem;
+        border: 1.7px solid $text-light;
+        border-radius: 50px;
+        transition: 0.2s ease;
+
+        span {
+          font-size: 1.3rem;
+          margin-right: 1.2rem;
+          font-weight: 600;
+        }
+
+        img {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
+
+      a.first {
+        margin-right: 2rem;
+      }
+
+      a:hover {
+        background: rgba(255, 255, 255, 0.219);
+        color: $text-light;
+      }
+    }
+
+    h2 {
+      text-transform: capitalize;
+      color: $text-light;
+      margin-bottom: 1.6rem;
+      font-weight: 600;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    a {
+      font-size: 1.6rem;
+      font-weight: 400;
+      border-width: 2px;
+      color: $text-light;
+
+      img {
+        width: 3rem;
+      }
+    }
+
+    .project-overlay {
+      background: $gradient;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.2s ease 0.2s;
+    }
+  }
+
+  // HOVER
+
+  &__body > div:hover {
+    img {
+      transform: scale(1.2);
+    }
+
+    figcaption {
+      opacity: 1;
+    }
+
+    .project-overlay {
+      opacity: 0.98;
+    }
+  }
+
+  // MEDIA QUERIES
+  @media (max-width: 827px) {
+    &__body > div {
+      flex: none;
+      width: 90%;
+      padding: 3rem;
+    }
+  }
+
+  @media (max-width: 630px) {
+    &__container {
+      flex-direction: column-reverse;
+      text-align: center;
+      row-gap: 3rem;
+    }
+
+    &__left {
+      justify-content: center;
+      width: 85%;
+    }
+  }
+
+  @media (max-width: 470px) {
+    &__body > div {
+      width: 90%;
+      padding: 1.2rem 1.6rem;
+    }
+  }
+
+  @media (max-width: 430px) {
+    &__body > div {
+      width: 95%;
+    }
+
+    .links {
+      flex-direction: column;
+    }
+
+    &__body > div > figure .links a.first {
+      margin-right: 0;
+      margin-bottom: 1.6rem;
+    }
+
+    &__body > div > figure .links a span {
+      font-size: 1.2rem;
+    }
+
+    .all-projects__body > div > figure h2 {
+      font-size: 1.6rem;
+    }
+  }
+}

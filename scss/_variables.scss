@@ -1,0 +1,19 @@
+// COLORS
+$bg-main: #1d1d27;
+$bg-footer: #191921;
+$card-bg: #2b2b33;
+$text-light: #ffffff;
+$text-light-gray: #d8d8d8;
+$text-grayish-dark: #1d1d27ef;
+$light-green: #32daff;
+$purle-blue: #8441f0;
+$gradient: linear-gradient(to bottom left, $light-green, $purle-blue);
+$text-gradient: linear-gradient(to top left, $light-green, $text-light);
+
+// TRANSITION
+$main-transition: 0.25s ease-in-out;
+
+// BORDER RADIUS
+$border-radius-8: 8px;
+$border-radius-5: 5px;
+$border-radius-3: 3px;

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programinity | Home</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="body">
+    <!-- OVERLAY -->
+    <div class="overlay hidden"></div>
+
+    <!-- CONSULTATION FORM -->
+    <div class="consultation hidden">
+      <form action="#" class="consultation">
+        <button class="consultation-icon">
+          <img src="img/close-icon.svg" alt="close icon" />
+        </button>
+        <label for="website-name">project name :</label>
+        <div class="input-group">
+          <input
+            type="text"
+            name="website-name"
+            class="text-input"
+            placeholder="Enter project name :"
+          />
+          <div class="btn">
+            <input type="submit" value="" class="submit" />
+            <img src="img/send-icon.svg" alt="send icon" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile">
+      <div class="main-container">
+        <ul class="mobile__menu-list">
+          <li><a href="#home" class="link">home</a></li>
+          <li><a href="#projects" class="link">projects</a></li>
+          <li><a href="#about" class="link">about</a></li>
+        </ul>
+        <button class="mobile__menu-cta primary-btn">
+          <span>free consultation</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="main-container nav-content">
+        <a href="index.html" class="nav__logo">
+          <img src="img/logo.png" alt="programinity logo" />
+          <span>Programinity</span>
+        </a>
+
+        <ul class="nav__list">
+          <li><a href="#home" class="active">home</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#about">about</a></li>
+        </ul>
+
+        <button class="nav__cta primary-btn">
+          <span>free consultation</span>
+        </button>
+
+        <div class="nav__button">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="main-container">
+        <div class="grid-container">
+          <div class="hero__text">
+            <h1>web design <span>and</span> development</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="start-project.html" class="hero__button primary-btn">
+              <span>start a project</span>
+              <img src="img/arrow-left.svg" alt="arrow left icon" />
+              <div></div>
+            </a>
+          </div>
+          <div class="hero__image">
+            <img class="inside" src="img/inside.png" />
+            <img class="outside" src="img/outside.svg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- OUR PROCESS -->
+      <div class="process">
+        <div class="main-container">
+          <div class="process__title">
+            <h2><span>our</span> process</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="process__container">
+            <div class="process-content process-1">
+              <div>
+                <div class="image">
+                  <img src="img/process-image-1.svg" alt="process image" />
+                </div>
+                <h3>Weekly sync. Meeting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              </div>
+            </div>
+            <div class="process-content process-2">
+              <div>
+                <div class="image">
+                  <img src="img/process-image-2.svg" alt="process image" />
+                </div>
+                <h3>Weekly sync. Meeting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              </div>
+            </div>
+            <div class="process-content process-3">
+              <div>
+                <div class="image">
+                  <img src="img/process-image-3.svg" alt="process image" />
+                </div>
+                <h3>Weekly sync. Meeting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTIONS -->
+    <section class="projects section-padding" id="projects">
+      <div class="main-container">
+        <div class="section-title">
+          <h2>Featured Projects</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam odit
+            aut, nulla excepturi iure est tempore accusamus.
+          </p>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="projects__content">
+                <div class="projects__image">
+                  <img src="img/project-1.png" alt="project image" />
+                </div>
+                <div class="projects__info">
+                  <h3>Civil Service Reviewer</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae obcaecati dolorem ipsa!
+                  </p>
+                  <a href="project-view.html" class="primary-btn"
+                    >view project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="projects__content">
+                <div class="projects__image">
+                  <img src="img/project-1.png" alt="project image" />
+                </div>
+                <div class="projects__info">
+                  <h3>Civil Service Reviewer</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae obcaecati dolorem ipsa!
+                  </p>
+                  <a href="project-view.html" class="primary-btn"
+                    >view project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="projects__content">
+                <div class="projects__image">
+                  <img src="img/project-1.png" alt="project image" />
+                </div>
+                <div class="projects__info">
+                  <h3>Civil Service Reviewer</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae obcaecati dolorem ipsa!
+                  </p>
+                  <a href="project-view.html" class="primary-btn"
+                    >view project</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SWIPER PAGINATION -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <a href="projects.html" class="all-projects-link">view all projects</a>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section-padding" id="about">
+      <div class="main-container">
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam odit
+            aut, nulla excepturi iure est tempore accusamus.
+          </p>
+        </div>
+        <div class="about__flex">
+          <div class="about__left">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam
+              incidunt voluptatibus ex vero.
+            </p>
+          </div>
+          <div class="about__right">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+              dolorum aut beatae, aliquam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+              dolorum aut beatae, aliquam quaerat doloremque ducimus
+              necessitatibus fuga aperiam! Iusto.
+            </p>
+          </div>
+        </div>
+        <div class="about__members">
+          <h3>discover our members</h3>
+        </div>
+        <div class="about__members-container">
+          <div class="about__card">
+            <div class="card__header">
+              <img src="img/member-1.jpg" alt="" />
+            </div>
+            <div class="card__body">
+              <h4>dianna may</h4>
+              <p><span>ceo</span>/full stack developer</p>
+            </div>
+            <div class="card__footer">
+              <div></div>
+              <span>member since june, 2021</span>
+            </div>
+          </div>
+          <div class="about__card">
+            <div class="card__header">
+              <img src="img/member-2.jpg" alt="" />
+            </div>
+            <div class="card__body">
+              <h4>joseph chua</h4>
+              <p><span>ceo</span>/full stack developer</p>
+            </div>
+            <div class="card__footer">
+              <span>member since june, 2021</span>
+            </div>
+          </div>
+          <div class="about__card">
+            <div class="card__header">
+              <img src="img/member-1.jpg" alt="" />
+            </div>
+            <div class="card__body">
+              <h4>dianna may</h4>
+              <p><span>ceo</span>/full stack developer</p>
+            </div>
+            <div class="card__footer">
+              <span>member since june, 2021</span>
+            </div>
+          </div>
+          <div class="about__card">
+            <div class="card__header">
+              <img src="img/member-2.jpg" alt="" />
+            </div>
+            <div class="card__body">
+              <h4>joseph chua</h4>
+              <p><span>ceo</span>/full stack developer</p>
+            </div>
+            <div class="card__footer">
+              <span>member since june, 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- START A PROJECT -->
+    <section class="start-project section-padding">
+      <div class="main-container">
+        <div class="start-project__card">
+          <img src="img/projects-image.png" alt="" />
+          <h3>ready to discuss your project?</h3>
+          <div>
+            <a href="start-project.html" class="primary-btn">
+              <span>start a project</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer home-footer">
+      <div class="main-container">
+        <div class="footer__logo">
+          <img src="img/logo.png" alt="programinity logo" />
+          <span>programinity</span>
+        </div>
+        <p class="footer__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          reprehenderit exercitationem molestias quo ullam.
+        </p>
+        <div class="footer__icons">
+          <a href="#" class="facebook">
+            <img src="img/facebook-icon.svg" alt="facebook icon" />
+          </a>
+          <a href="#" class="instagram">
+            <img src="img/instagram-icon.svg" alt="instagram icon" />
+          </a>
+          <a href="#" class="twitter">
+            <img src="img/twitter-icon.svg" alt="twitter icon" />
+          </a>
+          <a href="#" class="tiktok">
+            <img src="img/tiktok-icon.svg" alt="tiktok icon" />
+          </a>
+          <a href="#" class="linkedin">
+            <img src="img/linkedin-icon.svg" alt="linkedin icon" />
+          </a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          Copyright&copy;2022 Programinity. All right reserved | Privacy Policy
+        </p>
+      </div>
+    </div>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button class="scroll-btn">
+      <img src="img/arrow-left.svg" alt="" />
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="js/consultation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/animation.js"></script>
+  </body>
+</html>

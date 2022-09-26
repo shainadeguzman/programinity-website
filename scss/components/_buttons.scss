@@ -1,0 +1,22 @@
+.scroll-btn {
+  background: $gradient;
+  position: fixed;
+  bottom: 2rem;
+  right: 2.2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  z-index: 89;
+
+  img {
+    width: 45%;
+    transform: rotate(-90deg);
+    cursor: pointer;
+  }
+}

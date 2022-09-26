@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programinity</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="body">
+    <!-- OVERLAY -->
+    <div class="overlay hidden"></div>
+
+    <!-- CONSULTATION FORM -->
+    <div class="consultation hidden">
+      <form action="#" class="consultation">
+        <button class="consultation-icon">
+          <img src="img/close-icon.svg" alt="close icon" />
+        </button>
+        <label for="website-name">project name :</label>
+        <div class="input-group">
+          <input
+            type="text"
+            name="website-name"
+            class="text-input"
+            placeholder="Enter project name :"
+          />
+          <div class="btn">
+            <input type="submit" value="" class="submit" />
+            <img src="img/send-icon.svg" alt="send icon" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile">
+      <div class="main-container">
+        <ul class="mobile__menu-list">
+          <li><a href="index.html" class="active">home</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+        <button class="mobile__menu-cta primary-btn">
+          <span>free consultation</span>
+        </button>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="main-container">
+        <a href="index.html" class="nav__logo">
+          <img src="img/logo.png" alt="programinity logo" />
+          <span>Programinity</span>
+        </a>
+
+        <ul class="nav__list">
+          <li><a href="index.html" class="active">home</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+
+        <button class="nav__cta primary-btn">
+          <span>free consultation</span>
+        </button>
+
+        <div class="nav__button">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <!-- 1. PROJECT TITLE AND MOCKUP -->
+    <section class="project">
+      <div class="main-container">
+        <div class="project__header">
+          <div class="project__title">
+            <h1>civil service reviewer</h1>
+            <span>august 2022</span>
+          </div>
+          <!-- FOR DESKTOP -->
+          <div class="project__image">
+            <img src="img/mockup-1.png" alt="project image" />
+            <img src="img/mockup-2.png" alt="project image" />
+            <img src="img/mockup-3.png" alt="project image" />
+          </div>
+          <!-- FOR MOBILE (CAROUSEL/SLIDER) -->
+          <div class="swiper mySwiper2 project__view-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/mockup-1.png" alt="project image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/mockup-2.png" alt="project image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/mockup-3.png" alt="project image" />
+              </div>
+            </div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper project__view-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/mockup-1.png" alt="project image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/mockup-2.png" alt="project image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/mockup-3.png" alt="project image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PROJECT OVERVIEW -->
+    <section class="project__overview">
+      <div class="main-container">
+        <div class="project-subtitle">
+          <h2>overview</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+            praesentium debitis repellat amet recusandae veritatis consequuntur
+            voluptatem impedit possimus? Ducimus odio, voluptatum neque corporis
+            tempora molestias quaerat natus itaque molestiae est commodi, soluta
+            ab odit voluptas deleniti necessitatibus ea repellat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROJECT FEATURES -->
+    <section class="project__features">
+      <div class="main-container">
+        <div class="project-subtitle">
+          <h2>features</h2>
+        </div>
+        <div class="features-container">
+          <div class="features">
+            <div>
+              <img src="img/top-navigation.svg" alt="" />
+            </div>
+            <h3>top navigation</h3>
+          </div>
+          <div class="features">
+            <div>
+              <img src="img/contact-us.svg" alt="" />
+            </div>
+            <h3>contact us page</h3>
+          </div>
+          <div class="features">
+            <div>
+              <img src="img/login.svg" alt="" />
+            </div>
+            <h3>login page</h3>
+          </div>
+          <div class="features">
+            <div>
+              <img src="img/register-page.svg" alt="" />
+            </div>
+            <h3>registration page</h3>
+          </div>
+          <div class="features">
+            <div>
+              <img src="img/info-icon.svg" alt="" />
+            </div>
+            <h3>about us page</h3>
+          </div>
+          <div class="features">
+            <div>
+              <img src="img/finishing-up.svg" alt="" />
+            </div>
+            <h3>mobile menu</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECT TEAM -->
+    <section class="project__team">
+      <div class="main-container">
+        <div class="project-subtitle">
+          <h2>project team</h2>
+          <div class="team-container">
+            <div>
+              <img src="img/member-2.jpg" alt="team member" />
+              <h3>joseph chua</h3>
+              <span>back-end developer</span>
+            </div>
+            <div>
+              <img src="img/member-2.jpg" alt="team member" />
+              <h3>joseph chua</h3>
+              <span>back-end developer</span>
+            </div>
+            <div>
+              <img src="img/member-2.jpg" alt="team member" />
+              <h3>joseph chua</h3>
+              <span>back-end developer</span>
+            </div>
+            <div>
+              <img src="img/member-2.jpg" alt="team member" />
+              <h3>joseph chua</h3>
+              <span>back-end developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="main-container">
+        <div class="footer__logo">
+          <img src="img/logo.png" alt="programinity logo" />
+          <span>programinity</span>
+        </div>
+        <p class="footer__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          reprehenderit exercitationem molestias quo ullam.
+        </p>
+        <div class="footer__icons">
+          <a href="#" class="facebook">
+            <img src="img/facebook-icon.svg" alt="facebook icon" />
+          </a>
+          <a href="#" class="instagram">
+            <img src="img/instagram-icon.svg" alt="instagram icon" />
+          </a>
+          <a href="#" class="twitter">
+            <img src="img/twitter-icon.svg" alt="twitter icon" />
+          </a>
+          <a href="#" class="tiktok">
+            <img src="img/tiktok-icon.svg" alt="tiktok icon" />
+          </a>
+          <a href="#" class="linkedin">
+            <img src="img/linkedin-icon.svg" alt="linkedin icon" />
+          </a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          Copyright&copy;2022 Programinity. All right reserved | Privacy Policy
+        </p>
+      </div>
+    </div>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button class="scroll-btn">
+      <img src="img/arrow-left.svg" alt="" />
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/overlay.js"></script>
+    <script src="/js/consultation.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/project-view-swiper.js"></script>
+  </body>
+</html>

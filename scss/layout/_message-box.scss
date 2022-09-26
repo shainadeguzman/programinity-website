@@ -1,0 +1,80 @@
+.message {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  pointer-events: none;
+
+  &__content {
+    width: 26rem;
+    background-color: $card-bg;
+    padding: 3rem 2rem;
+    border-radius: $border-radius-5;
+    position: relative;
+    transform: scale(0);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  &.open {
+    visibility: visible;
+    pointer-events: all;
+  }
+
+  &.open &__content {
+    transform: scale(1);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  .icon {
+    flex: 0 1 25%;
+  }
+
+  .icon > img {
+    width: 2rem;
+    height: 2rem;
+    background-color: $bg-main;
+    padding: 0.6rem;
+    border-radius: 50px;
+  }
+
+  img.close-icon {
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    cursor: pointer;
+  }
+
+  &__text {
+    color: $text-light;
+  }
+
+  &__text h3 {
+    text-transform: capitalize;
+    color: rgba(13, 202, 13, 0.89);
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+  }
+
+  &__text p {
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}

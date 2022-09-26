@@ -1,0 +1,129 @@
+.nav {
+  height: 6.8rem;
+  background-color: $bg-main;
+
+  & > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & > .nav-content {
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1ms;
+  }
+
+  & > .nav-content.reveal {
+    opacity: 1;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  &__logo > img {
+    width: 4.2rem;
+    margin-right: 0.8rem;
+  }
+
+  &__logo > span {
+    color: $text-light;
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+  }
+
+  &__button {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+
+  &__list li:not(:last-child) {
+    margin-right: 4.6rem;
+  }
+
+  &__list a {
+    text-decoration: none;
+    color: $text-light;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    position: relative;
+    padding: 0 0.1rem;
+    transition: color $main-transition;
+  }
+
+  &__list a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: $gradient;
+    bottom: -3px;
+    left: 0;
+    opacity: 0;
+    transform: translateY(3px);
+    transition: transform $main-transition, opacity $main-transition;
+  }
+
+  &__list a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &__button {
+    height: 3.4rem;
+    width: 3.4rem;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__button span {
+    display: block;
+    border-radius: 5px;
+    width: 85%;
+    height: 2px;
+    background-color: $text-light;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform $main-transition;
+  }
+
+  &__button span:first-child {
+    transform: translateY(-5px);
+  }
+
+  &__button span:nth-child(2) {
+    transform: translateY(5px);
+  }
+
+  &__button.active span:first-child {
+    transform: rotateZ(45deg);
+  }
+
+  &__button.active span:nth-child(2) {
+    transform: rotateZ(-45deg);
+  }
+
+  // MEDIA QUERIES
+  @media (max-width: 830px) {
+    &__list,
+    &__cta {
+      display: none;
+    }
+
+    &__button {
+      display: block;
+    }
+  }
+}
